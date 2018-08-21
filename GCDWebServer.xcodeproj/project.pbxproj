@@ -447,6 +447,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E24039221BA09207000B7089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E240392B1BA09207000B7089 /* GCDWebServers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -850,6 +858,23 @@
 			productReference = E2DDD1F61BE69EE4002CE867 /* GCDWebServer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E24039241BA09207000B7089 /* Tests (Mac) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E240392E1BA09207000B7089 /* Build configuration list for PBXNativeTarget "Tests (Mac)" */;
+			buildPhases = (
+				E24039211BA09207000B7089 /* Sources */,
+				E24039221BA09207000B7089 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E240392D1BA09207000B7089 /* PBXTargetDependency */,
+			);
+			name = "Tests (Mac)";
+			productName = "GCDWebServers Tests (Mac)";
+			productReference = E24039251BA09207000B7089 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1119,6 +1144,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E24039211BA09207000B7089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24039321BA092B7000B7089 /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1356,6 +1389,42 @@
 			};
 			name = Release;
 		};
+		E240392F1BA09207000B7089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Tests;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = (
+					"$(inherited)",
+					"-Wno-gnu-zero-variadic-macro-arguments",
+				);
+			};
+			name = Debug;
+		};
+		E24039301BA09207000B7089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Tests;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = (
+					"$(inherited)",
+					"-Wno-gnu-zero-variadic-macro-arguments",
+				);
+			};
+			name = Release;
+		};
 		E274F877187E77D8009E0582 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1485,6 +1554,15 @@
 			buildConfigurations = (
 				CEE28D031AE0052000F4023C /* Debug */,
 				CEE28D041AE0052000F4023C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E240392E1BA09207000B7089 /* Build configuration list for PBXNativeTarget "Tests (Mac)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E240392F1BA09207000B7089 /* Debug */,
+				E24039301BA09207000B7089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
